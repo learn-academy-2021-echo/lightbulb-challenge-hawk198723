@@ -34,12 +34,7 @@ class SquareBox extends Component{
         // {this.state.lightStatus[this.state.index]} show the text status in the box
         // use Ternary Operator to check the index === 0 or not, I think use true or false in the very beginning might be a little bit easier
         <>
-         <button onClick = {this.addBox} class = "button">
-             Add Light Box
-         </button>
-         <button onClick = {this.removeBox} class = "button">
-             Remove Light Box
-         </button>
+        
 
           <div onClick = {this.changeStatus} >
 
