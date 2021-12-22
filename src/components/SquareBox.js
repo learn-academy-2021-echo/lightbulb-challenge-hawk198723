@@ -1,4 +1,8 @@
 import React, { Component } from 'react'
+import white from '../images/lightOff.png' //create a images dir under src, and put four images in it
+import yellow from '../images/lightOn.png'
+import OFF from '../images/switchOff.png'
+import ON from '../images/switchOn.png'
 //creates SquareBox class
 class SquareBox extends Component{
     constructor(props){
@@ -28,6 +32,7 @@ class SquareBox extends Component{
         // style={{background: this.state.color[this.state.index] is set the background color base on the index
         // onClick = {this.changeStatus} when the box get clicled, call the changeStatus function
         // {this.state.lightStatus[this.state.index]} show the text status in the box
+        // use Ternary Operator to check the index === 0 or not, I think use true or false in the very beginning might be a little bit easier
         <>
          <button onClick = {this.addBox} class = "button">
              Add Light Box
@@ -35,10 +40,22 @@ class SquareBox extends Component{
          <button onClick = {this.removeBox} class = "button">
              Remove Light Box
          </button>
-         <div id = "square"  onClick = {this.changeStatus} style={{background: this.state.color[this.state.index]}}>
-             <h2>{this.state.lightStatus[this.state.index]} </h2>
-         </div>
-         
+
+          <div onClick = {this.changeStatus} >
+
+            {this.state.index === 0?
+
+            (<> <img src = {ON} height={50} width={100} alt=""/>
+                <div></div>
+                
+               <img src = {white} height={289} width={230} alt=""/> </>)
+            :
+            (<> <img src = {OFF} height={50} width={100} alt=""/>
+                <div></div>
+                <img src = {yellow} height={289} width={230} alt=""/> </>)
+           }
+          </div>
+    
         </>
       )
     }
