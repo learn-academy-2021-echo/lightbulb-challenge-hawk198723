@@ -23,7 +23,6 @@ class App extends Component {
         </button>
 
         <LightBox />
-       
       </>
     )
   }
