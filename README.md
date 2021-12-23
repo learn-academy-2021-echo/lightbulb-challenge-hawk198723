@@ -36,6 +36,7 @@ Branch name: `assets-switch`
 - User story: When I click the light switch the image toggles from an image in the "off" position to an image in the "on" position and then back to "off" again.
 - User story: When the light switch is "off" I see a white (unlit) lightbulb. When I turn the switch "on" I see a yellow (lit) lightbulb.
 
+
 **Part 3: STRETCH**  
 Branch name: `add-remove-lightbulbs`
 

@@ -3,8 +3,39 @@
   width: 200px;
   height: 200Px;
   border: 2px solid black;
-}
+} */
+
 body {
-  background-color: #399188;
-  color: #000000;
+  background-color: #000000;
+  color: #0c5838;
 }
+
+h1{
+  font-size: 5em;
+  text-align: center;
+  margin: 0;
+  padding: 0;
+  font-family:'Courier New';
+  font-weight: 900;
+  margin-bottom: 40px;
+}
+
+.button{
+display: inline-flex;
+width: 178px;
+height: 67px;
+padding : 0;
+background: rgb(152, 203, 222); 
+outline: none;
+border-radius: 10px;
+overflow: hidden;
+border-width: 5px;
+font-size: 24px; 
+font-weight: 900;
+margin-left :20px;
+margin-bottom: 40px;
+}
+
+/* img{
+  height: 200px;
+} */
