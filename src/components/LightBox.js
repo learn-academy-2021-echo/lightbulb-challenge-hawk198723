@@ -28,20 +28,17 @@ class LightBox extends Component {
             // {this.state.lightStatus[this.state.index]} show the text status in the box
             // use Ternary Operator to check the index === 0 or not, I think use true or false in the very beginning might be a little bit easier
             <>
-
-
                 <div onClick={this.changeStatus} >
 
                     {this.state.index === 0 ?
 
-                        (<> <img src={ON} height={50} width={100} alt="" />
+                        (<> <img src={ON} height={50} width={100} alt="Switch On" />
                             <div></div>
-
-                            <img src={white} height={289} width={230} alt="" /> </>)
+                            <img src={white} height={289} width={230} alt="Light is On" /> </>)
                         :
-                        (<> <img src={OFF} height={50} width={100} alt="" />
+                        (<> <img src={OFF} height={50} width={100} alt="Switch Off" />
                             <div></div>
-                            <img src={yellow} height={289} width={230} alt="" /> </>)
+                            <img src={yellow} height={289} width={230} alt="Light is Off" /> </>)
                     }
                 </div>
 

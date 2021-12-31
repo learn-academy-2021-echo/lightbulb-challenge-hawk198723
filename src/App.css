@@ -1,13 +1,14 @@
-/* #squarebox {
+/* #square {
   margin-top: 20px;
   width: 200px;
   height: 200Px;
   border: 2px solid black;
-} */
+} */ */
 
-body {
+body{
   background-color: #000000;
-  color: #0c5838;
+  color: #e4a530;
+  font-size: xx-large;
 }
 
 h1{
@@ -36,6 +37,9 @@ margin-left :20px;
 margin-bottom: 40px;
 }
 
-/* img{
-  height: 200px;
-} */
+.bulbs {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 15px;
+}
